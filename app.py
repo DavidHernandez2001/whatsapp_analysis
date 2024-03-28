@@ -68,7 +68,7 @@ def ObtenerPartes(linea):
 ##################################################################################
 
 # Leer el archivo txt descargado del chat de WhatsApp
-RutaChat = 'Data/WhatsApp Chat with Tú ❤️.txt'
+RutaChat = 'WhatsApp_Chat_with_you.txt'
 
 # Lista para almacenar los datos (Fecha, Hora, Miembro, Mensaje) de cada línea del txt
 DatosLista = []
@@ -424,7 +424,7 @@ stopwords = STOPWORDS.update(['que', 'qué', 'con', 'de', 'te', 'en', 'la', 'lo'
                               'pero', 'del', 'mas', 'más', 'eso', 'este', 'como', 'así', 'todo', 'https','Media','omitted',
                               'y', 'mi', 'o', 'q', 'yo', 'al', 'audio', 'omitido', 'imagen', 'omitida'])
 
-mask = np.array(Image.open('Resources/heart.jpg'))
+mask = np.array(Image.open('heart.jpg'))
 
 # Obtener y acumular todas las palabras de cada mensaje
 for mensaje in mensajes_df['Mensaje'].values:
